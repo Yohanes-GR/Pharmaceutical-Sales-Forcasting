@@ -1,0 +1,56 @@
+from sqlalchemy import create_engine
+from sqlite3 import Error
+
+
+from log import get_logger
+
+
+my_logger = get_logger("DB_Script")
+
+class DBScript:
+    """
+        This script will manage to insert the data into SQLliet DB
+    """
+
+    def __init__(self): 
+        try:
+            self.conn = create_engine('sqlite:///pharmaceuticalDB.db') # ensure this is the correct path for the sqlite file. 
+            my_logger.info("SQLITE Connection Made Sucessfully")
+        except Exception as err:
+            my_logger.error("SQLITE Connection Failed")
+            my_logger.error(err)
+
+    def get_engine(self):
+        """
+        - this function simply returns the connection
+        """
+        return self.conn
+        
+    def execute_from_script(self,sql_script):
+        """
+        - this function executes commands
+        that come streaming in from sql_scripts
+        """
+        try:
+            sql_file = open(sql_script)
+            sql_ = sql_file.read()
+            sql_file.close()
+
+
+            sql_commands = sql_.split(";")
+            for command in sql_commands:
+                if command:
+                    self.conn.execute(command)
+            my_logger.info("Successfully created table")
+        except Error as e:
+            my_logger.error(e)
+        return
+    
+
+    def insert_update_data(self,table):
+        """
+        - this function pushes data into the table
+        """
+        self.df.to_sql(table, con=self.conn, if_exists='replace')
+        my_logger.info("Successfully pushed the data into the database")
+        return
