@@ -63,3 +63,4 @@ FileNotFoundError: [Errno 2] No such file or directory: '../data/cleaned_store.c
 2022-09-07 18:39:26,596 — FileHandler — DEBUG — file read as csv
 2022-09-07 19:21:18,920 — FileHandler — DEBUG — file read as csv
 2022-09-07 19:21:19,092 — FileHandler — DEBUG — file read as csv
+2022-09-07 19:21:19,135 — FileHandler — DEBUG — file read as csv
