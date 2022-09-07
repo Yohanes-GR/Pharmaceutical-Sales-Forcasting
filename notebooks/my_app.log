@@ -1,3 +1,66 @@
 2022-09-07 16:43:53,492 — DfOverview — DEBUG — Loaded successfully!
 2022-09-07 16:43:53,547 — DfCleaner — DEBUG — Loaded successfully!
 2022-09-07 16:43:53,559 — DfOutlier — DEBUG — Loaded successfully!
+2022-09-07 18:35:16,145 — FileHandler — ERROR — file not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 29, in read_csv
+    df = pd.read_csv(csv_path)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/cleaned_train.csv'
+2022-09-07 18:35:16,213 — FileHandler — ERROR — file not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 29, in read_csv
+    df = pd.read_csv(csv_path)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/cleaned_test.csv'
+2022-09-07 18:35:16,226 — FileHandler — ERROR — file not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 29, in read_csv
+    df = pd.read_csv(csv_path)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/cleaned_store.csv'
+2022-09-07 18:38:37,033 — FileHandler — INFO — file saved as csv
+2022-09-07 18:38:52,964 — FileHandler — INFO — file saved as csv
+2022-09-07 18:38:53,496 — FileHandler — INFO — file saved as csv
+2022-09-07 18:38:53,526 — FileHandler — INFO — file saved as csv
+2022-09-07 18:39:10,831 — FileHandler — INFO — file saved as csv
+2022-09-07 18:39:11,399 — FileHandler — INFO — file saved as csv
+2022-09-07 18:39:26,518 — FileHandler — DEBUG — file read as csv
+2022-09-07 18:39:26,576 — FileHandler — DEBUG — file read as csv
+2022-09-07 18:39:26,596 — FileHandler — DEBUG — file read as csv
+2022-09-07 19:21:18,920 — FileHandler — DEBUG — file read as csv
+2022-09-07 19:21:19,092 — FileHandler — DEBUG — file read as csv
+2022-09-07 19:21:19,135 — FileHandler — DEBUG — file read as csv
