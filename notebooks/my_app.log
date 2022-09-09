@@ -1,2 +1,80 @@
-2022-09-08 10:08:05,566 — Forcasting — DEBUG — Date is encoded successfully.
-2022-09-08 10:08:36,368 — Forcasting — DEBUG — Exception occured while Normalizing the dataset, "None of [Index(['StoreType'], dtype='object')] are in the [columns]"
+2022-09-09 10:32:25,375 — FileHandler — DEBUG — file read as csv
+2022-09-09 10:32:26,103 — FileHandler — DEBUG — file read as csv
+2022-09-09 10:32:26,159 — FileHandler — DEBUG — file read as csv
+2022-09-09 11:23:54,454 — FileHandler — INFO — file saved as csv
+2022-09-09 11:23:55,554 — FileHandler — INFO — file saved as csv
+2022-09-09 12:14:38,217 — Forcasting — DEBUG — Date is encoded successfully.
+2022-09-09 12:14:44,707 — Forcasting — DEBUG — Data is Normalized successfully.
+2022-09-09 12:38:34,131 — Forcasting — INFO — Train Test split done successfully.
+2022-09-09 12:48:32,521 — Forcasting — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-09 12:48:34,709 — Forcasting — INFO — predicting for a group instance
+2022-09-09 12:48:34,842 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
+    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-09 09-48-34.pkl'
+2022-09-09 12:55:05,129 — Forcasting — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-09 12:55:07,037 — Forcasting — INFO — predicting for a group instance
+2022-09-09 12:55:07,044 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
+    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-09 09-55-07.pkl'
+2022-09-09 13:09:28,165 — Forcasting — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-09 13:09:32,832 — Forcasting — INFO — predicting for a group instance
+2022-09-09 13:09:32,839 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
+    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-09 10-09-32.pkl'
+2022-09-09 13:13:14,308 — Forcasting — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-09 13:13:14,480 — Forcasting — INFO — predicting for a group instance
+2022-09-09 13:13:14,491 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
+    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor_model 2022-09-09 10-13-14.pkl'
+2022-09-09 13:46:07,155 — Prediction — DEBUG — Date is encoded successfully.
+2022-09-09 13:47:03,234 — Prediction — DEBUG — Exception occured while Normalizing the dataset, "None of [Index(['StoreType'], dtype='object')] are in the [columns]"
+2022-09-09 13:52:01,488 — DfCleaner — DEBUG — Loaded successfully!
+2022-09-09 13:52:01,525 — DfOutlier — DEBUG — Loaded successfully!
+2022-09-09 14:00:15,251 — DfOverview — DEBUG — Loaded successfully!
+2022-09-09 14:04:37,502 — DfOverview — DEBUG — Loaded successfully!
+2022-09-09 14:04:37,522 — DfCleaner — DEBUG — Loaded successfully!
+2022-09-09 14:04:37,551 — DfOutlier — DEBUG — Loaded successfully!
+2022-09-09 14:04:41,546 — FileHandler — DEBUG — file read as csv
+2022-09-09 14:04:41,621 — FileHandler — DEBUG — file read as csv
+2022-09-09 14:04:41,629 — FileHandler — DEBUG — file read as csv
+2022-09-09 14:05:31,445 — FileHandler — INFO — file saved as csv
+2022-09-09 14:05:45,062 — FileHandler — INFO — file saved as csv
+2022-09-09 14:05:45,674 — FileHandler — INFO — file saved as csv
+2022-09-09 14:06:29,285 — FileHandler — DEBUG — file read as csv
+2022-09-09 14:06:29,394 — FileHandler — DEBUG — file read as csv
+2022-09-09 14:06:29,397 — FileHandler — DEBUG — file read as csv
+2022-09-09 14:11:37,691 — FileHandler — INFO — file saved as csv
+2022-09-09 14:11:38,333 — FileHandler — INFO — file saved as csv
+2022-09-09 15:42:08,097 — FileHandler — INFO — file saved as csv
+2022-09-09 15:42:08,943 — FileHandler — INFO — file saved as csv
+2022-09-09 23:40:48,882 — FileHandler — DEBUG — file read as csv
+2022-09-09 23:40:49,072 — FileHandler — DEBUG — file read as csv
+2022-09-09 23:40:56,979 — Prediction — DEBUG — Date is encoded successfully.
+2022-09-09 23:41:05,413 — Prediction — DEBUG — Data is Normalized successfully.
+2022-09-09 23:42:06,688 — Prediction — INFO — Train Test split done successfully.
+2022-09-09 23:46:27,872 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-09 23:46:29,567 — Prediction — INFO — predicting for a group instance
+2022-09-09 23:46:43,313 — FileHandler — INFO — The model is successfully saved!
+2022-09-09 23:47:07,810 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-09 23:47:07,989 — Prediction — INFO — predicting for a group instance
+2022-09-09 23:47:08,018 — FileHandler — INFO — The model is successfully saved!
+2022-09-09 23:50:23,133 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-09 23:50:24,753 — Prediction — INFO — predicting for a group instance
+2022-09-09 23:50:41,760 — FileHandler — INFO — The model is successfully saved!
+2022-09-09 23:52:08,718 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-09 23:52:08,872 — Prediction — INFO — predicting for a group instance
+2022-09-09 23:52:08,903 — FileHandler — INFO — The model is successfully saved!
+2022-09-09 23:52:18,853 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-09 23:53:29,033 — FileHandler — DEBUG — model read as pkl

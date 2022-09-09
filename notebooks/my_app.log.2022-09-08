@@ -1,0 +1,235 @@
+2022-09-08 10:08:05,566 — Forcasting — DEBUG — Date is encoded successfully.
+2022-09-08 10:08:36,368 — Forcasting — DEBUG — Exception occured while Normalizing the dataset, "None of [Index(['StoreType'], dtype='object')] are in the [columns]"
+2022-09-08 13:06:29,095 — FileHandler — DEBUG — file read as csv
+2022-09-08 13:06:29,188 — FileHandler — DEBUG — file read as csv
+2022-09-08 13:06:42,505 — Forcast — DEBUG — Date is encoded successfully.
+2022-09-08 13:06:55,483 — Forcast — DEBUG — Exception occured while Normalizing the dataset, "None of [Index(['StoreType'], dtype='object')] are in the [columns]"
+2022-09-08 13:09:31,585 — Forcast — INFO — Train Test split done successfully.
+2022-09-08 13:15:45,255 — Forcast — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-08 13:15:46,828 — Forcast — INFO — predicting for a group instance
+2022-09-08 13:15:46,834 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
+    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-08 10-15-46.pkl'
+2022-09-08 13:23:20,766 — Forcast — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-08 13:23:20,899 — Forcast — INFO — predicting for a group instance
+2022-09-08 13:23:20,910 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
+    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor_model 2022-09-08 10-23-20.pkl'
+2022-09-08 13:25:00,026 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 13:25:44,123 — Forcast — ERROR — Exception occured computing the model score, 'NoneType' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\839586432.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Testing Accuracy is: {}".format(loaded_model.score(x_train_test, y_train_test)))
+AttributeError: 'NoneType' object has no attribute 'score'
+2022-09-08 13:25:53,462 — Forcast — ERROR — Exception occured computing the model score, 'NoneType' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\839586432.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Testing Accuracy is: {}".format(loaded_model.score(x_train_test, y_train_test)))
+AttributeError: 'NoneType' object has no attribute 'score'
+2022-09-08 13:26:40,818 — Forcast — ERROR — Exception occured computing the model score, 'NoneType' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\839586432.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Testing Accuracy is: {}".format(loaded_model.score(x_train_test, y_train_test)))
+AttributeError: 'NoneType' object has no attribute 'score'
+2022-09-08 13:32:36,909 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 13:57:42,471 — Forcast — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-08 13:57:44,488 — Forcast — INFO — predicting for a group instance
+2022-09-08 13:58:05,710 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 14:03:53,700 — Forcast — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-08 14:03:53,821 — Forcast — INFO — predicting for a group instance
+2022-09-08 14:03:53,851 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 14:04:05,585 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:04:09,017 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:04:31,217 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:06:05,469 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:06:35,319 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:06:40,887 — Forcast — ERROR — Exception occured computing the model score, 'NoneType' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\839586432.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Testing Accuracy is: {}".format(loaded_model.score(x_train_test, y_train_test)))
+AttributeError: 'NoneType' object has no attribute 'score'
+2022-09-08 14:07:44,735 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:11:47,216 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:12:01,390 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl.pkl'
+2022-09-08 14:12:09,560 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl.pkl.pkl'
+2022-09-08 14:12:56,820 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl.pkl.pkl'
+2022-09-08 14:13:06,993 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl.pkl'
+2022-09-08 14:13:20,009 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:42:12,291 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
+2022-09-08 14:42:14,959 — Forcast — ERROR — Exception occured computing the model score, 'NoneType' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\839586432.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Testing Accuracy is: {}".format(loaded_model.score(x_train_test, y_train_test)))
+AttributeError: 'NoneType' object has no attribute 'score'
+2022-09-08 14:49:54,996 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-09-08 11-13-31.pkl'
+2022-09-08 14:49:57,758 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-09-08 11-13-31.pkl'
+2022-09-08 14:50:42,114 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-09-08 11-13-31.pkl'
+2022-09-08 14:55:07,803 — Forcast — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-08 14:55:09,512 — Forcast — INFO — predicting for a group instance
+2022-09-08 14:55:28,052 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 14:55:40,342 — Forcast — INFO — Train Test split done successfully.
+2022-09-08 15:01:06,556 — Forcast — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-08 15:01:08,683 — Forcast — INFO — predicting for a group instance
+2022-09-08 15:01:37,776 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 15:31:45,216 — Forcast — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-08 15:31:45,332 — Forcast — INFO — predicting for a group instance
+2022-09-08 15:31:45,384 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 15:31:46,117 — FileHandler — DEBUG — model read as pkl
+2022-09-08 16:22:32,210 — FileHandler — DEBUG — file read as csv
+2022-09-08 16:22:32,320 — FileHandler — DEBUG — file read as csv
+2022-09-08 16:22:38,917 — Forcast — DEBUG — Date is encoded successfully.
+2022-09-08 16:22:38,917 — Forcast — DEBUG — Date is encoded successfully.
+2022-09-08 16:26:52,383 — Forcast — INFO — Train Test split done successfully.
+2022-09-08 16:26:52,383 — Forcast — INFO — Train Test split done successfully.
+2022-09-08 16:29:38,466 — Forcast — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-08 16:29:38,466 — Forcast — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-09-08 16:29:40,664 — Forcast — INFO — predicting for a group instance
+2022-09-08 16:29:40,664 — Forcast — INFO — predicting for a group instance
+2022-09-08 16:30:03,689 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 16:33:44,993 — Forcast — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-08 16:33:44,993 — Forcast — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-09-08 16:33:45,159 — Forcast — INFO — predicting for a group instance
+2022-09-08 16:33:45,159 — Forcast — INFO — predicting for a group instance
+2022-09-08 16:33:45,253 — FileHandler — INFO — The model is successfully saved!
+2022-09-08 16:34:03,427 — FileHandler — DEBUG — model read as pkl
+2022-09-08 19:50:35,511 — FileHandler — ERROR — file not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 29, in read_csv
+    df = pd.read_csv(csv_path)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/cleaned_train.csv'
+2022-09-08 19:50:35,758 — FileHandler — ERROR — file not found
+Traceback (most recent call last):
+  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 29, in read_csv
+    df = pd.read_csv(csv_path)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\mo\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/cleaned_test.csv'
+2022-09-08 21:27:25,267 — FileHandler — DEBUG — file read as csv
+2022-09-08 21:27:31,825 — Forcast — ERROR — Exception occured in Date encoding!, 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\648617622.py", line 10, in <cell line: 1>
+    dataset['Date'] = encoder.fit_transform(dataset['Date'])
+TypeError: 'NoneType' object is not subscriptable
+2022-09-08 21:27:31,825 — Forcast — ERROR — Exception occured in Date encoding!, 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\648617622.py", line 10, in <cell line: 1>
+    dataset['Date'] = encoder.fit_transform(dataset['Date'])
+TypeError: 'NoneType' object is not subscriptable
+2022-09-08 21:27:31,825 — Forcast — ERROR — Exception occured in Date encoding!, 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\mo\AppData\Local\Temp\ipykernel_15044\648617622.py", line 10, in <cell line: 1>
+    dataset['Date'] = encoder.fit_transform(dataset['Date'])
+TypeError: 'NoneType' object is not subscriptable
+2022-09-08 21:42:05,445 — DfCleaner — DEBUG — Loaded successfully!
+2022-09-08 21:42:06,241 — DfOutlier — DEBUG — Loaded successfully!
+2022-09-08 21:46:52,072 — DfCleaner — DEBUG — Loaded successfully!
+2022-09-08 21:46:52,080 — DfOutlier — DEBUG — Loaded successfully!
+2022-09-08 21:59:48,954 — DfCleaner — DEBUG — Loaded successfully!
+2022-09-08 21:59:48,964 — DfOutlier — DEBUG — Loaded successfully!
+2022-09-08 22:16:01,653 — FileHandler — INFO — file saved as csv
+2022-09-08 22:16:19,814 — FileHandler — INFO — file saved as csv
+2022-09-08 22:16:20,422 — FileHandler — INFO — file saved as csv
+2022-09-08 22:24:12,052 — FileHandler — DEBUG — file read as csv
+2022-09-08 22:24:12,132 — FileHandler — DEBUG — file read as csv
+2022-09-08 22:24:12,157 — FileHandler — DEBUG — file read as csv
+2022-09-08 22:58:18,243 — FileHandler — DEBUG — file read as csv
+2022-09-08 22:58:18,337 — FileHandler — DEBUG — file read as csv
+2022-09-08 22:58:18,364 — FileHandler — DEBUG — file read as csv
