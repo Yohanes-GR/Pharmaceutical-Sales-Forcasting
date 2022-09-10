@@ -14,4 +14,6 @@ Rossmann Pharmaceuticals is one of the company which sales in all their stores a
 The project covers the following:
 - Data preprocessing
 - EDA( Exploratory Data Analysis)
-
+- Model Building
+- Evaluaating model
+- model Depeloyment
