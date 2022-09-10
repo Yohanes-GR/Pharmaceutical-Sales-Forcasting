@@ -1,80 +1,418 @@
-2022-09-09 10:32:25,375 — FileHandler — DEBUG — file read as csv
-2022-09-09 10:32:26,103 — FileHandler — DEBUG — file read as csv
-2022-09-09 10:32:26,159 — FileHandler — DEBUG — file read as csv
-2022-09-09 11:23:54,454 — FileHandler — INFO — file saved as csv
-2022-09-09 11:23:55,554 — FileHandler — INFO — file saved as csv
-2022-09-09 12:14:38,217 — Forcasting — DEBUG — Date is encoded successfully.
-2022-09-09 12:14:44,707 — Forcasting — DEBUG — Data is Normalized successfully.
-2022-09-09 12:38:34,131 — Forcasting — INFO — Train Test split done successfully.
-2022-09-09 12:48:32,521 — Forcasting — INFO — fitted a RandomForestRegressor(n_estimators=10) model
-2022-09-09 12:48:34,709 — Forcasting — INFO — predicting for a group instance
-2022-09-09 12:48:34,842 — FileHandler — ERROR — save failed
+2022-05-30 00:00:44,187 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:00:46,359 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:00:48,014 — Prediction — INFO — Successfully saved the model
+2022-05-30 00:05:21,334 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:05:21,334 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:05:21,334 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:05:21,334 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:05:30,948 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:05:30,948 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:05:30,948 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:05:30,948 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:05:35,784 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:05:35,784 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:05:35,784 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:05:35,784 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:07:18,161 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:07:18,161 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:07:18,161 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:07:18,161 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:07:19,593 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:07:19,593 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:07:19,593 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:07:19,593 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:07:21,558 — Prediction — INFO — Successfully saved the model
+2022-05-30 00:07:21,558 — Prediction — INFO — Successfully saved the model
+2022-05-30 00:07:21,558 — Prediction — INFO — Successfully saved the model
+2022-05-30 00:07:21,558 — Prediction — INFO — Successfully saved the model
+2022-05-30 00:08:08,820 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
 Traceback (most recent call last):
-  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
-    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
-FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-09 09-48-34.pkl'
-2022-09-09 12:55:05,129 — Forcasting — INFO — fitted a RandomForestRegressor(n_estimators=10) model
-2022-09-09 12:55:07,037 — Forcasting — INFO — predicting for a group instance
-2022-09-09 12:55:07,044 — FileHandler — ERROR — save failed
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_24224\2338668621.py", line 2, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(forecast.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 00:08:08,820 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
 Traceback (most recent call last):
-  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
-    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
-FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-09 09-55-07.pkl'
-2022-09-09 13:09:28,165 — Forcasting — INFO — fitted a RandomForestRegressor(n_estimators=10) model
-2022-09-09 13:09:32,832 — Forcasting — INFO — predicting for a group instance
-2022-09-09 13:09:32,839 — FileHandler — ERROR — save failed
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_24224\2338668621.py", line 2, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(forecast.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 00:08:08,820 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
 Traceback (most recent call last):
-  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
-    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
-FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-09-09 10-09-32.pkl'
-2022-09-09 13:13:14,308 — Forcasting — INFO — fitted a LGBMRegressor(n_estimators=10) model
-2022-09-09 13:13:14,480 — Forcasting — INFO — predicting for a group instance
-2022-09-09 13:13:14,491 — FileHandler — ERROR — save failed
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_24224\2338668621.py", line 2, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(forecast.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 00:08:08,820 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
 Traceback (most recent call last):
-  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 38, in save_model
-    with open(f'../models/{file_name}.pkl', 'wb') as my_model:
-FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor_model 2022-09-09 10-13-14.pkl'
-2022-09-09 13:46:07,155 — Prediction — DEBUG — Date is encoded successfully.
-2022-09-09 13:47:03,234 — Prediction — DEBUG — Exception occured while Normalizing the dataset, "None of [Index(['StoreType'], dtype='object')] are in the [columns]"
-2022-09-09 13:52:01,488 — DfCleaner — DEBUG — Loaded successfully!
-2022-09-09 13:52:01,525 — DfOutlier — DEBUG — Loaded successfully!
-2022-09-09 14:00:15,251 — DfOverview — DEBUG — Loaded successfully!
-2022-09-09 14:04:37,502 — DfOverview — DEBUG — Loaded successfully!
-2022-09-09 14:04:37,522 — DfCleaner — DEBUG — Loaded successfully!
-2022-09-09 14:04:37,551 — DfOutlier — DEBUG — Loaded successfully!
-2022-09-09 14:04:41,546 — FileHandler — DEBUG — file read as csv
-2022-09-09 14:04:41,621 — FileHandler — DEBUG — file read as csv
-2022-09-09 14:04:41,629 — FileHandler — DEBUG — file read as csv
-2022-09-09 14:05:31,445 — FileHandler — INFO — file saved as csv
-2022-09-09 14:05:45,062 — FileHandler — INFO — file saved as csv
-2022-09-09 14:05:45,674 — FileHandler — INFO — file saved as csv
-2022-09-09 14:06:29,285 — FileHandler — DEBUG — file read as csv
-2022-09-09 14:06:29,394 — FileHandler — DEBUG — file read as csv
-2022-09-09 14:06:29,397 — FileHandler — DEBUG — file read as csv
-2022-09-09 14:11:37,691 — FileHandler — INFO — file saved as csv
-2022-09-09 14:11:38,333 — FileHandler — INFO — file saved as csv
-2022-09-09 15:42:08,097 — FileHandler — INFO — file saved as csv
-2022-09-09 15:42:08,943 — FileHandler — INFO — file saved as csv
-2022-09-09 23:40:48,882 — FileHandler — DEBUG — file read as csv
-2022-09-09 23:40:49,072 — FileHandler — DEBUG — file read as csv
-2022-09-09 23:40:56,979 — Prediction — DEBUG — Date is encoded successfully.
-2022-09-09 23:41:05,413 — Prediction — DEBUG — Data is Normalized successfully.
-2022-09-09 23:42:06,688 — Prediction — INFO — Train Test split done successfully.
-2022-09-09 23:46:27,872 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
-2022-09-09 23:46:29,567 — Prediction — INFO — predicting for a group instance
-2022-09-09 23:46:43,313 — FileHandler — INFO — The model is successfully saved!
-2022-09-09 23:47:07,810 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
-2022-09-09 23:47:07,989 — Prediction — INFO — predicting for a group instance
-2022-09-09 23:47:08,018 — FileHandler — INFO — The model is successfully saved!
-2022-09-09 23:50:23,133 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
-2022-09-09 23:50:24,753 — Prediction — INFO — predicting for a group instance
-2022-09-09 23:50:41,760 — FileHandler — INFO — The model is successfully saved!
-2022-09-09 23:52:08,718 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
-2022-09-09 23:52:08,872 — Prediction — INFO — predicting for a group instance
-2022-09-09 23:52:08,903 — FileHandler — INFO — The model is successfully saved!
-2022-09-09 23:52:18,853 — FileHandler — ERROR — model not found
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_24224\2338668621.py", line 2, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(forecast.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 00:19:35,942 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:19:35,942 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:19:35,942 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:19:35,942 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:19:35,942 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:53,054 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:53,054 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:53,054 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:53,054 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:53,054 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:53,054 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:21:56,411 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:21:56,411 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:21:56,411 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:21:56,411 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:21:56,411 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:21:56,411 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:22:22,517 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:22:22,517 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:22:22,517 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:22:22,517 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:22:22,517 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:22:22,517 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:51,229 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:26:54,343 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:27:19,790 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:43,991 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:38:46,955 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:39:12,385 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:42,849 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:44,673 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:40:46,273 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,400 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,719 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:46:04,752 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:01,948 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,240 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:48:02,282 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:15,728 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,016 — Prediction — INFO — predicting for a group instance
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 00:55:16,056 — Prediction — INFO — The model is successfully saved!
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:07,469 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:09:10,276 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:11:59,573 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:11:59,682 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:12:00,156 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:12:03,085 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:12:33,606 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 01:14:01,716 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 01:14:03,704 — Prediction — INFO — predicting for a group instance
+2022-05-30 01:16:11,815 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 01:16:13,795 — Prediction — INFO — predicting for a group instance
+2022-05-30 01:20:36,035 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 01:20:37,689 — Prediction — INFO — predicting for a group instance
+2022-05-30 01:20:38,921 — Prediction — INFO — The model is successfully saved!
+2022-05-30 01:21:04,946 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 01:21:05,215 — Prediction — INFO — predicting for a group instance
+2022-05-30 01:21:05,224 — Prediction — INFO — The model is successfully saved!
+2022-05-30 01:21:22,078 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
 Traceback (most recent call last):
-  File "C:\Users\mo\Desktop\10-Academy Project\Pharmaceutical-Sales-Forcasting\scripts\file_handler.py", line 50, in read_model
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_4596\2589636770.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(RF_prediction.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 01:21:54,613 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_4596\3894500638.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(RF_prediction.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 01:24:12,974 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_4596\3894500638.py", line 3, in <cell line: 1>
+    print("RandomForestRegressor Test Accuracy: {}".format(RF_prediction.score(x_train_test, y_train_test)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 01:24:46,576 — Prediction — ERROR — Exception occured computing the model score, 'tuple' object has no attribute 'score'
+Traceback (most recent call last):
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_4596\1018436796.py", line 4, in <cell line: 1>
+    print("RandomForestRegressor Mean Absoulute Error is: {}".format(RF_prediction.score(mae)))
+AttributeError: 'tuple' object has no attribute 'score'
+2022-05-30 01:25:21,741 — Prediction — ERROR — Exception occured computing the model score, RegressorMixin.score() missing 1 required positional argument: 'y'
+Traceback (most recent call last):
+  File "C:\Users\Sebli\AppData\Local\Temp\ipykernel_4596\1915797241.py", line 4, in <cell line: 1>
+    print("RandomForestRegressor Mean Absoulute Error is: {}".format(loaded_model.score(mae)))
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\utils\autologging_utils\safety.py", line 557, in safe_patch_function
+    patch_function(call_original, *args, **kwargs)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\sklearn\__init__.py", line 1582, in patched_model_score
+    score_value = original(self, *args, **kwargs)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\utils\autologging_utils\safety.py", line 538, in call_original
+    return call_original_fn_with_event_logging(_original_fn, og_args, og_kwargs)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\utils\autologging_utils\safety.py", line 473, in call_original_fn_with_event_logging
+    original_fn_result = original_fn(*og_args, **og_kwargs)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\utils\autologging_utils\safety.py", line 535, in _original_fn
+    original_result = original(*_og_args, **_og_kwargs)
+TypeError: RegressorMixin.score() missing 1 required positional argument: 'y'
+2022-05-30 01:34:25,523 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:34:25,648 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:35:25,096 — __main__ — DEBUG — Date is encoded successfully.
+2022-05-30 01:35:40,843 — __main__ — DEBUG — Data is Normalized successfully.
+2022-05-30 01:38:55,329 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:38:55,444 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:41:28,523 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:41:28,622 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:42:02,310 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:42:02,310 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:42:02,310 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:45:18,896 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:45:18,896 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:45:18,896 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:46:09,743 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:46:09,743 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:46:09,743 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:46:29,406 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:46:29,406 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:46:29,406 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:47:14,333 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:47:14,333 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:47:14,333 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:47:14,333 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 01:48:45,127 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:48:45,127 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:48:45,127 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:48:45,127 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 01:50:42,287 — FileHandler — DEBUG — file read as csv
+2022-05-30 01:50:42,408 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:01:28,433 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:01:28,524 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:01:38,958 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 02:01:44,442 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 02:01:46,327 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 02:03:13,330 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 02:03:13,562 — Prediction — INFO — predicting for a group instance
+2022-05-30 02:03:13,570 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "c:\Users\Sebli\Desktop\10x Files\Week 3\Pharmaceutical-Sales-Prediction\scripts\file_handler.py", line 43, in save_model
+    mlflow.log_artifact(f"../models/{file_name}.pkl")
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\fluent.py", line 693, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\client.py", line 955, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\_tracking_service\client.py", line 337, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 38, in log_artifact
+    shutil.copyfile(local_file, os.path.join(artifact_dir, os.path.basename(local_file)))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1264.0_x64__qbz5n2kfra8p0\lib\shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor_model 2022-05-29 23-03-13.pkl'
+2022-05-30 02:07:52,786 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "c:\Users\Sebli\Desktop\10x Files\Week 3\Pharmaceutical-Sales-Prediction\scripts\file_handler.py", line 52, in read_model
     model = pickle.load(open(name, "rb"))
-FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl'
-2022-09-09 23:53:29,033 — FileHandler — DEBUG — model read as pkl
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\RandomForestRegressor_model 2022-05-29 22-20-37.pkl.pkl'
+2022-05-30 02:09:04,338 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "c:\Users\Sebli\Desktop\10x Files\Week 3\Pharmaceutical-Sales-Prediction\scripts\file_handler.py", line 52, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\LGBMRegressor_model 2022-05-29 21-55-16.pkl.pkl'
+2022-05-30 02:09:10,941 — FileHandler — ERROR — model not found
+Traceback (most recent call last):
+  File "c:\Users\Sebli\Desktop\10x Files\Week 3\Pharmaceutical-Sales-Prediction\scripts\file_handler.py", line 52, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '..\\models\\LGBMRegressor_model 2022-05-29 21-55-16.pkl.pkl'
+2022-05-30 02:09:51,374 — FileHandler — DEBUG — model read as pkl
+2022-05-30 02:10:57,128 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:10:57,234 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:10:57,732 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 02:11:00,836 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 02:11:32,955 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 02:13:05,704 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 02:13:07,412 — Prediction — INFO — predicting for a group instance
+2022-05-30 02:13:08,100 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "c:\Users\Sebli\Desktop\10x Files\Week 3\Pharmaceutical-Sales-Prediction\scripts\file_handler.py", line 43, in save_model
+    mlflow.log_artifact(f"../models/{file_name}.pkl")
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\fluent.py", line 693, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\client.py", line 955, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\_tracking_service\client.py", line 337, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 38, in log_artifact
+    shutil.copyfile(local_file, os.path.join(artifact_dir, os.path.basename(local_file)))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1264.0_x64__qbz5n2kfra8p0\lib\shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor_model 2022-05-29 23-13-07.pkl'
+2022-05-30 02:13:14,023 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 02:13:14,265 — Prediction — INFO — predicting for a group instance
+2022-05-30 02:13:14,273 — FileHandler — ERROR — save failed
+Traceback (most recent call last):
+  File "c:\Users\Sebli\Desktop\10x Files\Week 3\Pharmaceutical-Sales-Prediction\scripts\file_handler.py", line 43, in save_model
+    mlflow.log_artifact(f"../models/{file_name}.pkl")
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\fluent.py", line 693, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\client.py", line 955, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\tracking\_tracking_service\client.py", line 337, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\Sebli\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 38, in log_artifact
+    shutil.copyfile(local_file, os.path.join(artifact_dir, os.path.basename(local_file)))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1264.0_x64__qbz5n2kfra8p0\lib\shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor_model 2022-05-29 23-13-14.pkl'
+2022-05-30 02:13:14,499 — FileHandler — DEBUG — model read as pkl
+2022-05-30 02:17:39,084 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:17:39,197 — FileHandler — DEBUG — file read as csv
+2022-05-30 02:17:39,761 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 02:17:42,729 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 02:18:08,680 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 02:19:41,079 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 02:19:43,143 — Prediction — INFO — predicting for a group instance
+2022-05-30 02:19:44,735 — FileHandler — INFO — The model is successfully saved!
+2022-05-30 02:19:51,213 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 02:19:51,472 — Prediction — INFO — predicting for a group instance
+2022-05-30 02:19:51,480 — FileHandler — INFO — The model is successfully saved!
+2022-05-30 02:19:51,696 — FileHandler — DEBUG — model read as pkl
+2022-05-30 11:32:03,813 — FileHandler — DEBUG — file read as csv
+2022-05-30 11:32:03,912 — FileHandler — DEBUG — file read as csv
+2022-05-30 11:32:04,430 — Prediction — DEBUG — Date is encoded successfully.
+2022-05-30 11:32:07,594 — Prediction — DEBUG — Data is Normalized successfully.
+2022-05-30 11:32:55,094 — Prediction — INFO — Train Test split done successfully.
+2022-05-30 11:34:55,518 — Prediction — INFO — fitted a RandomForestRegressor(n_estimators=10) model
+2022-05-30 11:34:57,403 — Prediction — INFO — predicting for a group instance
+2022-05-30 11:34:59,452 — FileHandler — INFO — The model is successfully saved!
+2022-05-30 11:35:04,667 — Prediction — INFO — fitted a LGBMRegressor(n_estimators=10) model
+2022-05-30 11:35:04,894 — Prediction — INFO — predicting for a group instance
+2022-05-30 11:35:04,908 — FileHandler — INFO — The model is successfully saved!
+2022-05-30 11:35:06,074 — FileHandler — DEBUG — model read as pkl
+2022-09-10 11:29:20,636 — model_prediction — DEBUG — Date is encoded successfully.
+2022-09-10 11:35:28,382 — model_prediction — DEBUG — Data is Normalized successfully.
+2022-09-10 11:36:41,613 — model_prediction — DEBUG — Normalization successfully Done.
+2022-09-10 11:40:48,573 — model_prediction — INFO — Train Test split done successfully.
+2022-09-10 13:03:34,965 — model_prediction — DEBUG — Date is encoded successfully.
+2022-09-10 13:03:56,832 — model_prediction — DEBUG — Normalization successfully Done.
+2022-09-10 13:09:06,004 — model_prediction — INFO — Train Test split done successfully.
